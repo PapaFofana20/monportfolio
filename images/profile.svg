@@ -1,0 +1,66 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond dégradé -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4a460;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#daa520;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Cercle de fond -->
+  <circle cx="150" cy="150" r="150" fill="url(#bgGrad)"/>
+  
+  <!-- Tête -->
+  <circle cx="150" cy="100" r="45" fill="url(#skinGrad)"/>
+  
+  <!-- Cheveux -->
+  <ellipse cx="150" cy="70" rx="50" ry="40" fill="#2c1810"/>
+  <path d="M 110 85 Q 105 70 120 65" stroke="#2c1810" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M 190 85 Q 195 70 180 65" stroke="#2c1810" stroke-width="8" fill="none" stroke-linecap="round"/>
+  
+  <!-- Yeux -->
+  <circle cx="135" cy="95" r="5" fill="#1a1a1a"/>
+  <circle cx="165" cy="95" r="5" fill="#1a1a1a"/>
+  <circle cx="136" cy="94" r="2" fill="white"/>
+  <circle cx="166" cy="94" r="2" fill="white"/>
+  
+  <!-- Sourcils -->
+  <path d="M 125 85 Q 135 82 145 85" stroke="#2c1810" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 155 85 Q 165 82 175 85" stroke="#2c1810" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Nez -->
+  <path d="M 150 95 L 150 110" stroke="#daa520" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Bouche -->
+  <path d="M 140 120 Q 150 130 160 120" stroke="#c17817" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Cou -->
+  <rect x="138" y="140" width="24" height="30" fill="url(#skinGrad)"/>
+  
+  <!-- Corps/Shirt -->
+  <ellipse cx="150" cy="185" rx="55" ry="70" fill="#1e40af"/>
+  
+  <!-- Col de la chemise -->
+  <path d="M 130 150 L 120 160 L 150 165 L 180 160 L 170 150" fill="#1e3a8a" stroke="#3b82f6" stroke-width="1"/>
+  
+  <!-- Motif sur la poitrine -->
+  <circle cx="150" cy="190" r="8" fill="#3b82f6" opacity="0.5"/>
+  <circle cx="140" cy="200" r="6" fill="#0ea5e9" opacity="0.4"/>
+  <circle cx="160" cy="205" r="6" fill="#0ea5e9" opacity="0.4"/>
+  
+  <!-- Ombres -->
+  <ellipse cx="150" cy="145" rx="8" ry="3" fill="#1a1a1a" opacity="0.2"/>
+  
+  <!-- Éléments décorathifs (symboles tech) -->
+  <g font-size="20" fill="#ffffff" opacity="0.3">
+    <text x="40" y="50">&lt;</text>
+    <text x="260" y="260">/&gt;</text>
+  </g>
+  
+  <!-- Cercle lumineux extérieur -->
+  <circle cx="150" cy="150" r="145" fill="none" stroke="rgba(255, 255, 255, 0.1)" stroke-width="2" stroke-dasharray="10,5"/>
+</svg>
