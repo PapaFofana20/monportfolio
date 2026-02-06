@@ -1,4 +1,3 @@
-/* ==================== ROOT VARIABLES ==================== */
 :root {
     --primary: #0EA5E9;
     --secondary: #06B6D4;
@@ -12,7 +11,6 @@
     --text-secondary: #CBD5E1;
 }
 
-/* ==================== GLOBAL STYLES ==================== */
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +29,6 @@ body {
     line-height: 1.6;
 }
 
-/* ==================== SCROLLBAR PERSONNALISÉE ==================== */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -49,7 +46,6 @@ body {
     background: linear-gradient(180deg, var(--secondary) 0%, var(--accent) 100%);
 }
 
-/* ==================== ANIMATIONS ==================== */
 @keyframes slideInRight {
     from {
         opacity: 0;
@@ -143,7 +139,6 @@ body {
     }
 }
 
-/* ==================== NAVIGATION LINKS ==================== */
 .nav-link {
     position: relative;
     display: inline-block;
@@ -190,7 +185,6 @@ body {
     transform: translateX(8px);
 }
 
-/* ==================== BUTTONS ==================== */
 .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -388,7 +382,6 @@ body {
     transform: translateY(-1px) scale(0.9);
 }
 
-/* ==================== SECTION TITLES ==================== */
 .section-title {
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 900;
@@ -412,7 +405,6 @@ body {
     animation: slideInLeft 0.6s ease 0.2s both;
 }
 
-/* ==================== BADGES ==================== */
 .education-badge {
     display: flex;
     align-items: center;
@@ -469,7 +461,34 @@ body {
     box-shadow: 0 8px 16px rgba(14, 165, 233, 0.2);
 }
 
-/* ==================== SKILL ELEMENTS ==================== */
+.skill-category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(71, 85, 105, 0.3);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.6), rgba(30, 27, 75, 0.3));
+    transition: all 0.3s ease;
+    animation: slideInUp 0.6s ease;
+}
+
+.skill-category-card:hover {
+    transform: translateY(-8px);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(30, 27, 75, 0.4));
+    box-shadow: 0 15px 40px rgba(14, 165, 233, 0.15);
+}
+
+.skill-category-card ul {
+    width: 100%;
+}
+
+.skill-category-card li {
+    justify-content: center;
+}
+
 .skill-icon {
     display: flex;
     align-items: center;
@@ -482,6 +501,7 @@ body {
     color: white;
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     transition: all 0.3s ease;
+    margin: 0 auto;
 }
 
 .skill-icon:hover {
@@ -504,7 +524,6 @@ body {
     transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ==================== FORMS ==================== */
 #contact-form {
     display: flex;
     flex-direction: column;
@@ -660,7 +679,6 @@ textarea.form-input {
     cursor: not-allowed;
 }
 
-/* ==================== NOTIFICATIONS ==================== */
 .notification {
     position: fixed;
     top: 6rem;
@@ -690,7 +708,6 @@ textarea.form-input {
     border-color: rgba(14, 165, 233, 0.6);
 }
 
-/* ==================== SOCIAL ICONS ==================== */
 .social-icon {
     display: inline-flex;
     align-items: center;
@@ -713,7 +730,6 @@ textarea.form-input {
     box-shadow: 0 10px 25px rgba(14, 165, 233, 0.3);
 }
 
-/* ==================== CARDS ==================== */
 .education-card {
     position: relative;
     padding: 1.5rem 2rem;
@@ -746,6 +762,48 @@ textarea.form-input {
     box-shadow: 0 15px 40px rgba(6, 182, 212, 0.15);
 }
 
+.contact-cards-grid {
+    display: grid;
+    gap: 1.5rem;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .contact-cards-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(71, 85, 105, 0.3);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.6), rgba(30, 27, 75, 0.3));
+    transition: all 0.3s ease;
+    animation: slideInUp 0.6s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-8px);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(30, 27, 75, 0.4));
+    box-shadow: 0 15px 40px rgba(14, 165, 233, 0.15);
+}
+
 .project-card {
     position: relative;
     border-radius: 0.75rem;
@@ -773,7 +831,6 @@ textarea.form-input {
     z-index: 0;
 }
 
-/* ==================== UTILITY CLASSES ==================== */
 .fade-in {
     animation: fadeIn 0.6s ease;
 }
@@ -790,7 +847,6 @@ textarea.form-input {
     animation: slideInUp 0.5s ease;
 }
 
-/* ==================== RESPONSIVE DESIGN ==================== */
 @media (max-width: 768px) {
     .contact-form-wrapper {
         padding: 1.5rem;
