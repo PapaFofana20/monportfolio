@@ -176,9 +176,15 @@ document.querySelectorAll('button, a[class*="btn"]').forEach(btn => {
 
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
+    const homeSection = document.getElementById('home');
+    
+    // Effet parallaxe pour la section home
+    if (homeSection) {
+        homeSection.style.backgroundPosition = `center ${scrolled * 0.5}px`;
+    }
     
     document.querySelectorAll('section').forEach((section, index) => {
-        if (index % 2 === 0) {
+        if (index % 2 === 0 && section.id !== 'home') {
             section.style.backgroundPosition = `center ${scrolled * 0.5}px`;
         }
     });
