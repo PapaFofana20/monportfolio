@@ -1,0 +1,21 @@
+{
+  "name": "projet-portfolio-v3",
+  "version": "1.0.0",
+  "description": "Portfolio professionnel avec Tailwind CSS",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [
+    "portfolio",
+    "tailwind",
+    "css"
+  ],
+  "author": "Papa Dama FOFANA",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

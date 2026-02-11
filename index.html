@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Développeur Web Professionnel</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="dist/output.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="bg-slate-950 text-slate-100 overflow-x-hidden">
 
     <nav class="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800/50 z-50 shadow-2xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center gap-2">
-                    <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-lg flex items-center justify-center transform hover:scale-110 transition duration-300">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-lg flex items-center justify-center transform hover:scale-110 transition duration-300">
                         <i class="fas fa-code text-white text-lg"></i>
                     </div>
-                    <span class="text-2xl font-black bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">MonPortfolio</span>
+                    <span
+                        class="text-2xl font-black bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">MonPortfolio</span>
                 </div>
 
                 <div class="hidden lg:flex items-center gap-6">
-                    <a href="#home" class="nav-link">Accueil</a>
-                    <a href="#about" class="nav-link">À propos</a>
-                    <a href="#education" class="nav-link">Formation</a>
-                    <a href="#experience" class="nav-link">Expériences</a>
-                    <a href="#skills" class="nav-link">Compétences</a>
-                    <a href="#projects" class="nav-link">Projets</a>
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#home"
+                        class="relative inline-block px-2.5 py-2 text-slate-400 no-underline font-medium transition-colors duration-300 text-[0.95rem] hover:text-primary after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-primary after:to-secondary after:transition-all after:duration-[400ms] after:ease-[cubic-bezier(0.4,0,0.2,1)] hover:after:w-full">Accueil</a>
+                    <a href="#about"
+                        class="relative inline-block px-2.5 py-2 text-slate-400 no-underline font-medium transition-colors duration-300 text-[0.95rem] hover:text-primary after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-primary after:to-secondary after:transition-all after:duration-[400ms] after:ease-[cubic-bezier(0.4,0,0.2,1)] hover:after:w-full">À
+                        propos</a>
+                    <a href="#education"
+                        class="relative inline-block px-2.5 py-2 text-slate-400 no-underline font-medium transition-colors duration-300 text-[0.95rem] hover:text-primary after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-primary after:to-secondary after:transition-all after:duration-[400ms] after:ease-[cubic-bezier(0.4,0,0.2,1)] hover:after:w-full">Formation</a>
+                    <a href="#experience"
+                        class="relative inline-block px-2.5 py-2 text-slate-400 no-underline font-medium transition-colors duration-300 text-[0.95rem] hover:text-primary after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-primary after:to-secondary after:transition-all after:duration-[400ms] after:ease-[cubic-bezier(0.4,0,0.2,1)] hover:after:w-full">Expériences</a>
+                    <a href="#skills"
+                        class="relative inline-block px-2.5 py-2 text-slate-400 no-underline font-medium transition-colors duration-300 text-[0.95rem] hover:text-primary after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-primary after:to-secondary after:transition-all after:duration-[400ms] after:ease-[cubic-bezier(0.4,0,0.2,1)] hover:after:w-full">Compétences</a>
+                    <a href="#projects"
+                        class="relative inline-block px-2.5 py-2 text-slate-400 no-underline font-medium transition-colors duration-300 text-[0.95rem] hover:text-primary after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-primary after:to-secondary after:transition-all after:duration-[400ms] after:ease-[cubic-bezier(0.4,0,0.2,1)] hover:after:w-full">Projets</a>
+                    <a href="#contact"
+                        class="relative inline-block px-2.5 py-2 text-slate-400 no-underline font-medium transition-colors duration-300 text-[0.95rem] hover:text-primary after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-primary after:to-secondary after:transition-all after:duration-[400ms] after:ease-[cubic-bezier(0.4,0,0.2,1)] hover:after:w-full">Contact</a>
                 </div>
 
                 <button id="menu-btn" class="lg:hidden text-slate-300 hover:text-blue-400 transition text-2xl">
                     <i class="fas fa-bars"></i>
                 </button>
 
-                <a href="#contact" class="hidden lg:block bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white px-6 py-2.5 rounded-lg font-semibold transition transform hover:scale-105">
+                <a href="#contact"
+                    class="hidden lg:block bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white px-6 py-2.5 rounded-lg font-semibold transition transform hover:scale-105">
                     Contactez-moi
                 </a>
             </div>
 
             <div id="mobile-menu" class="hidden lg:hidden pb-6 border-t border-slate-800/50">
                 <div class="flex flex-col gap-2 pt-4">
-                    <a href="#home" class="nav-link-mobile">Accueil</a>
-                    <a href="#about" class="nav-link-mobile">À propos</a>
-                    <a href="#education" class="nav-link-mobile">Formation</a>
-                    <a href="#experience" class="nav-link-mobile">Expériences</a>
-                    <a href="#skills" class="nav-link-mobile">Compétences</a>
-                    <a href="#projects" class="nav-link-mobile">Projets</a>
-                    <a href="#contact" class="nav-link-mobile">Contact</a>
+                    <a href="#home"
+                        class="block px-4 py-3 text-slate-400 no-underline rounded-lg transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:translate-x-2">Accueil</a>
+                    <a href="#about"
+                        class="block px-4 py-3 text-slate-400 no-underline rounded-lg transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:translate-x-2">À
+                        propos</a>
+                    <a href="#education"
+                        class="block px-4 py-3 text-slate-400 no-underline rounded-lg transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:translate-x-2">Formation</a>
+                    <a href="#experience"
+                        class="block px-4 py-3 text-slate-400 no-underline rounded-lg transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:translate-x-2">Expériences</a>
+                    <a href="#skills"
+                        class="block px-4 py-3 text-slate-400 no-underline rounded-lg transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:translate-x-2">Compétences</a>
+                    <a href="#projects"
+                        class="block px-4 py-3 text-slate-400 no-underline rounded-lg transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:translate-x-2">Projets</a>
+                    <a href="#contact"
+                        class="block px-4 py-3 text-slate-400 no-underline rounded-lg transition-all duration-300 hover:bg-primary/10 hover:text-primary hover:translate-x-2">Contact</a>
                 </div>
             </div>
         </div>
@@ -55,19 +76,27 @@
 
     <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 px-4 overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900"></div>
-        
-        <div class="absolute top-20 left-10 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-        <div class="absolute top-40 right-10 w-72 h-72 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
-        <div class="absolute bottom-20 left-1/2 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+
+        <div
+            class="absolute top-20 left-10 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob">
+        </div>
+        <div
+            class="absolute top-40 right-10 w-72 h-72 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000">
+        </div>
+        <div
+            class="absolute bottom-20 left-1/2 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000">
+        </div>
 
         <div class="relative z-10 max-w-5xl mx-auto text-center">
-            <div class="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 rounded-full px-4 py-2 mb-8 backdrop-blur-sm">
+            <div
+                class="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700/50 rounded-full px-4 py-2 mb-8 backdrop-blur-sm">
                 <i class="fas fa-star text-yellow-400 text-sm"></i>
                 <span class="text-slate-300 text-sm">Prés pour de nouveaux projets</span>
             </div>
 
             <h1 class="text-5xl lg:text-7xl font-black mb-6 leading-tight">
-                <span class="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent animate-pulse-slow">
+                <span
+                    class="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent animate-pulse-slow">
                     Créer des Expériences
                 </span>
                 <br>
@@ -75,14 +104,17 @@
             </h1>
 
             <p class="text-lg lg:text-xl text-slate-400 mb-8 max-w-3xl mx-auto leading-relaxed">
-                Développeur Web Full Stack passionate, créant des interfaces modernes et performantes avec HTML, CSS, JavaScript et Tailwind CSS
+                Développeur Web Full Stack passionate, créant des interfaces modernes et performantes avec HTML, CSS,
+                JavaScript et Tailwind CSS
             </p>
 
             <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-                <a href="#projects" class="btn-primary">
+                <a href="#projects"
+                    class="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 text-base font-bold uppercase tracking-wide text-white no-underline cursor-pointer border-0 rounded-xl bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_200%] relative overflow-hidden transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[0_8px_25px_rgba(14,165,233,0.35),0_0_50px_rgba(6,182,212,0.1),inset_0_1px_0_rgba(255,255,255,0.2)] hover:-translate-y-2 hover:scale-105 hover:bg-[position:200%_center] hover:shadow-[0_15px_45px_rgba(14,165,233,0.5),0_0_80px_rgba(6,182,212,0.3),inset_0_1px_0_rgba(255,255,255,0.3)] active:translate-y-[-2px] active:scale-95 before:content-[''] before:absolute before:top-0 before:left-[-100%] before:w-full before:h-full before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:transition-[left] before:duration-600 hover:before:left-full">
                     <i class="fas fa-rocket"></i> Voir mes projets
                 </a>
-                <a href="#contact" class="btn-secondary">
+                <a href="#contact"
+                    class="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 text-base font-bold uppercase tracking-wide text-white no-underline cursor-pointer border-2 border-secondary rounded-xl bg-transparent relative overflow-hidden transition-all duration-[400ms] ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[0_0_30px_rgba(6,182,212,0.2)] hover:-translate-y-2 hover:scale-105 hover:border-primary hover:bg-secondary/15 hover:shadow-[0_15px_45px_rgba(6,182,212,0.4),0_0_60px_rgba(14,165,233,0.25)] active:translate-y-[-2px] active:scale-95 before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-br before:from-secondary/20 before:to-primary/10 before:opacity-0 before:transition-opacity before:duration-400 before:-z-10 hover:before:opacity-100">
                     <i class="fas fa-paper-plane"></i> Me contacter
                 </a>
             </div>
@@ -99,20 +131,29 @@
 
             <div class="grid lg:grid-cols-2 gap-16 items-center mt-16">
                 <div class="relative">
-                    <img src="images/ChatGPT Image 2 févr. 2026, 11_13_57.png" alt="Profil" class="w-full max-w-md rounded-2xl object-cover shadow-2xl mx-auto">
+                    <img src="images/ChatGPT Image 2 févr. 2026, 11_13_57.png" alt="Profil"
+                        class="w-full max-w-md rounded-2xl object-cover shadow-2xl mx-auto">
                 </div>
 
                 <div class="space-y-6">
                     <h3 class="text-6xl font-bold text-slate-100">
-                        Passionné par le <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">développement web</span>
+                        Passionné par le <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">développement
+                            web</span>
                     </h3>
 
                     <p class="text-slate-400 leading-relaxed text-lg">
-                        Je m'appelle <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Papa Dama FOFANA</span> et depuis quelques années, je transforme des idées en réalités numériques. Je suis un développeur full stack enthousiaste, spécialisé dans la création d'interfaces utilisateur modernes, performantes et accessibles.
+                        Je m'appelle <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Papa Dama
+                            FOFANA</span> et depuis quelques années, je transforme des idées en réalités numériques. Je
+                        suis un développeur full stack enthousiaste, spécialisé dans la création d'interfaces
+                        utilisateur modernes, performantes et accessibles.
                     </p>
 
                     <p class="text-slate-400 leading-relaxed text-lg">
-                        Mon approche combine la maîtrise technique avec une compréhension profonde des besoins utilisateurs. J'utilise les dernières technologies et bonnes pratiques pour livrer des produits exceptionnels.
+                        Mon approche combine la maîtrise technique avec une compréhension profonde des besoins
+                        utilisateurs. J'utilise les dernières technologies et bonnes pratiques pour livrer des produits
+                        exceptionnels.
                     </p>
 
                     <div class="space-y-3 pt-4">
@@ -156,11 +197,13 @@
                             </div>
                         </div>
                         <div class="flex-grow">
-                            <h3 class="text-2xl font-bold text-slate-100 mb-2">Licence Professionnelle 2 en Génie Informatique</h3>
+                            <h3 class="text-2xl font-bold text-slate-100 mb-2">Licence Professionnelle 2 en Génie
+                                Informatique</h3>
                             <p class="text-blue-400 font-semibold mb-1">UNIPRO</p>
                             <p class="text-slate-400 text-sm mb-4">2025 - 2026</p>
                             <p class="text-slate-300 leading-relaxed">
-                                Poursuite de la formation en génie informatique, approfondissement des technologies web modernes et développement de projets innovants.
+                                Poursuite de la formation en génie informatique, approfondissement des technologies web
+                                modernes et développement de projets innovants.
                             </p>
                         </div>
                     </div>
@@ -174,11 +217,13 @@
                             </div>
                         </div>
                         <div class="flex-grow">
-                            <h3 class="text-2xl font-bold text-slate-100 mb-2">Licence Professionnelle 1 en Génie Informatique</h3>
+                            <h3 class="text-2xl font-bold text-slate-100 mb-2">Licence Professionnelle 1 en Génie
+                                Informatique</h3>
                             <p class="text-cyan-400 font-semibold mb-1">UNIPRO</p>
                             <p class="text-slate-400 text-sm mb-4">2024 - 2025</p>
                             <p class="text-slate-300 leading-relaxed">
-                                Formation en génie informatique avec focus sur les technologies web, les bases de données et le développement logiciel. Projets pratiques et collaboration en équipe.
+                                Formation en génie informatique avec focus sur les technologies web, les bases de
+                                données et le développement logiciel. Projets pratiques et collaboration en équipe.
                             </p>
                         </div>
                     </div>
@@ -196,7 +241,8 @@
                             <p class="text-purple-400 font-semibold mb-1">Lycée de Pikine</p>
                             <p class="text-slate-400 text-sm mb-4">2023 - 2024</p>
                             <p class="text-slate-300 leading-relaxed">
-                                Obtention du baccalauréat avec succès. Formation générale complète préparant à la poursuite d'études supérieures en informatique et technologie.
+                                Obtention du baccalauréat avec succès. Formation générale complète préparant à la
+                                poursuite d'études supérieures en informatique et technologie.
                             </p>
                         </div>
                     </div>
@@ -213,14 +259,16 @@
                 <div class="experience-card group">
                     <div class="flex flex-col md:flex-row justify-between md:items-start gap-4 mb-4">
                         <div>
-                            <h3 class="text-2xl font-bold text-slate-100 group-hover:text-blue-400 transition">Développeur Web Senior</h3>
+                            <h3 class="text-2xl font-bold text-slate-100 group-hover:text-blue-400 transition">
+                                Développeur Web Senior</h3>
                             <p class="text-blue-400 font-semibold">TechCorp Solutions</p>
                             <p class="text-slate-400 text-sm">Janvier 2024 - Décembre 2025</p>
                         </div>
                         <span class="badge-experience">1 an</span>
                     </div>
                     <p class="text-slate-300 mb-4 leading-relaxed">
-                        Leadership technique sur des projets web complexes utilisant React et Node.js. Mentoring junior développeurs et amélioration des standards de code.
+                        Leadership technique sur des projets web complexes utilisant React et Node.js. Mentoring junior
+                        développeurs et amélioration des standards de code.
                     </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="tech-badge">React</span>
@@ -234,14 +282,16 @@
                 <div class="experience-card group">
                     <div class="flex flex-col md:flex-row justify-between md:items-start gap-4 mb-4">
                         <div>
-                            <h3 class="text-2xl font-bold text-slate-100 group-hover:text-cyan-400 transition">Développeur Web Front-end</h3>
+                            <h3 class="text-2xl font-bold text-slate-100 group-hover:text-cyan-400 transition">
+                                Développeur Web Front-end</h3>
                             <p class="text-cyan-400 font-semibold">StartUp Digital</p>
                             <p class="text-slate-400 text-sm">Janvier 2023 - Décembre 2023</p>
                         </div>
                         <span class="badge-experience">1.5 ans</span>
                     </div>
                     <p class="text-slate-300 mb-4 leading-relaxed">
-                        Développement d'interfaces utilisateur modernes et performantes. Intégration de designs Figma, optimisation SEO et performance. Travail en agile avec sprints bi-hebdomadaires.
+                        Développement d'interfaces utilisateur modernes et performantes. Intégration de designs Figma,
+                        optimisation SEO et performance. Travail en agile avec sprints bi-hebdomadaires.
                     </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="tech-badge">React</span>
@@ -254,14 +304,16 @@
                 <div class="experience-card group">
                     <div class="flex flex-col md:flex-row justify-between md:items-start gap-4 mb-4">
                         <div>
-                            <h3 class="text-2xl font-bold text-slate-100 group-hover:text-purple-400 transition">Stage - Développeur Web</h3>
+                            <h3 class="text-2xl font-bold text-slate-100 group-hover:text-purple-400 transition">Stage -
+                                Développeur Web</h3>
                             <p class="text-purple-400 font-semibold">Agence Web CreativeStudio</p>
                             <p class="text-slate-400 text-sm">Février 2023 - Mai 2023</p>
                         </div>
                         <span class="badge-experience">4 mois</span>
                     </div>
                     <p class="text-slate-300 mb-4 leading-relaxed">
-                        Développement de sites web responsive et accessibles. Apprentissage des frameworks modernes et collaboration avec une équipe de designers et développeurs.
+                        Développement de sites web responsive et accessibles. Apprentissage des frameworks modernes et
+                        collaboration avec une équipe de designers et développeurs.
                     </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="tech-badge">HTML/CSS</span>
@@ -373,7 +425,8 @@
                         <span class="text-blue-400 font-bold">95%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-bar-fill" style="width: 95%; background: linear-gradient(90deg, #3B82F6, #0EA5E9);"></div>
+                        <div class="skill-bar-fill"
+                            style="width: 95%; background: linear-gradient(90deg, #3B82F6, #0EA5E9);"></div>
                     </div>
                 </div>
 
@@ -383,7 +436,8 @@
                         <span class="text-blue-400 font-bold">90%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-bar-fill" style="width: 90%; background: linear-gradient(90deg, #3B82F6, #0EA5E9);"></div>
+                        <div class="skill-bar-fill"
+                            style="width: 90%; background: linear-gradient(90deg, #3B82F6, #0EA5E9);"></div>
                     </div>
                 </div>
 
@@ -393,7 +447,8 @@
                         <span class="text-emerald-400 font-bold">92%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-bar-fill" style="width: 92%; background: linear-gradient(90deg, #10B981, #14B8A6);"></div>
+                        <div class="skill-bar-fill"
+                            style="width: 92%; background: linear-gradient(90deg, #10B981, #14B8A6);"></div>
                     </div>
                 </div>
 
@@ -403,7 +458,8 @@
                         <span class="text-emerald-400 font-bold">85%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-bar-fill" style="width: 85%; background: linear-gradient(90deg, #10B981, #14B8A6);"></div>
+                        <div class="skill-bar-fill"
+                            style="width: 85%; background: linear-gradient(90deg, #10B981, #14B8A6);"></div>
                     </div>
                 </div>
             </div>
@@ -417,9 +473,13 @@
             <div class="grid lg:grid-cols-2 gap-10 mt-16">
                 <div class="project-card">
                     <div class="relative overflow-hidden rounded-t-xl h-64 group">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="E-commerce" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-0 group-hover:opacity-100 transition duration-300"></div>
-                        <div class="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="E-commerce"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition duration-300">
                             <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg transition">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
@@ -431,7 +491,8 @@
                     <div class="bg-slate-800 border border-slate-700/50 rounded-b-xl p-6">
                         <h3 class="text-2xl font-bold text-slate-100 mb-3">Plateforme E-commerce Moderne</h3>
                         <p class="text-slate-400 mb-6 leading-relaxed">
-                            Plateforme e-commerce complète avec panier intelligent, système de paiement Stripe intégré et dashboard admin. Architecture scalable avec React et Node.js.
+                            Plateforme e-commerce complète avec panier intelligent, système de paiement Stripe intégré
+                            et dashboard admin. Architecture scalable avec React et Node.js.
                         </p>
                         <div class="space-y-4">
                             <div>
@@ -450,9 +511,13 @@
 
                 <div class="project-card">
                     <div class="relative overflow-hidden rounded-t-xl h-64 group">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="Saas" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-0 group-hover:opacity-100 transition duration-300"></div>
-                        <div class="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="Saas"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition duration-300">
                             <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg transition">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
@@ -464,7 +529,8 @@
                     <div class="bg-slate-800 border border-slate-700/50 rounded-b-xl p-6">
                         <h3 class="text-2xl font-bold text-slate-100 mb-3">Plateforme SaaS - Gestion de Projets</h3>
                         <p class="text-slate-400 mb-6 leading-relaxed">
-                            Application SaaS collaborative pour la gestion de projets avec temps réel, notifications en live et exports avancés. Multi-utilisateurs et sécurisée.
+                            Application SaaS collaborative pour la gestion de projets avec temps réel, notifications en
+                            live et exports avancés. Multi-utilisateurs et sécurisée.
                         </p>
                         <div class="space-y-4">
                             <div>
@@ -483,9 +549,13 @@
 
                 <div class="project-card">
                     <div class="relative overflow-hidden rounded-t-xl h-64 group">
-                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80" alt="Météo" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-0 group-hover:opacity-100 transition duration-300"></div>
-                        <div class="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80" alt="Météo"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition duration-300">
                             <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg transition">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
@@ -497,7 +567,8 @@
                     <div class="bg-slate-800 border border-slate-700/50 rounded-b-xl p-6">
                         <h3 class="text-2xl font-bold text-slate-100 mb-3">Application Météo Progressive</h3>
                         <p class="text-slate-400 mb-6 leading-relaxed">
-                            Application PWA avec localisation géolocalisée en temps réel, prévisions sur 7 jours et mise en cache intelligente pour usage offline.
+                            Application PWA avec localisation géolocalisée en temps réel, prévisions sur 7 jours et mise
+                            en cache intelligente pour usage offline.
                         </p>
                         <div class="space-y-4">
                             <div>
@@ -516,9 +587,13 @@
 
                 <div class="project-card">
                     <div class="relative overflow-hidden rounded-t-xl h-64 group">
-                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80" alt="Portfolio" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-0 group-hover:opacity-100 transition duration-300"></div>
-                        <div class="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80" alt="Portfolio"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        </div>
+                        <div
+                            class="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition duration-300">
                             <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg transition">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
@@ -530,7 +605,8 @@
                     <div class="bg-slate-800 border border-slate-700/50 rounded-b-xl p-6">
                         <h3 class="text-2xl font-bold text-slate-100 mb-3">Portfolio Designer 3D Interactif</h3>
                         <p class="text-slate-400 mb-6 leading-relaxed">
-                            Portfolio interactif avec animations 3D, scroll parallaxe et sections dynamiques. Design moderne avec Tailwind CSS et JavaScript vanilla.
+                            Portfolio interactif avec animations 3D, scroll parallaxe et sections dynamiques. Design
+                            moderne avec Tailwind CSS et JavaScript vanilla.
                         </p>
                         <div class="space-y-4">
                             <div>
@@ -555,7 +631,8 @@
             <h2 class="section-title text-center">Parlons de Votre Projet</h2>
 
             <p class="text-center text-slate-400 text-lg mb-12 max-w-2xl mx-auto">
-                Vous avez un projet en tête ? Une question ? N'hésitez pas à me contacter. Je suis toujours enthousiaste à l'idée de discuter de nouvelles opportunités.
+                Vous avez un projet en tête ? Une question ? N'hésitez pas à me contacter. Je suis toujours enthousiaste
+                à l'idée de discuter de nouvelles opportunités.
             </p>
 
             <div class="grid md:grid-cols-3 gap-6 mb-12 contact-cards-grid">
@@ -587,23 +664,27 @@
                     <div class="form-grid">
                         <div class="form-group">
                             <label for="name">Nom complet</label>
-                            <input type="text" id="name" name="name" class="form-input" required placeholder="Votre nom">
+                            <input type="text" id="name" name="name" class="form-input" required
+                                placeholder="Votre nom">
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-input" required placeholder="votre.email@example.com">
+                            <input type="email" id="email" name="email" class="form-input" required
+                                placeholder="votre.email@example.com">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="subject">Sujet</label>
-                        <input type="text" id="subject" name="subject" class="form-input" required placeholder="Sujet de votre message">
+                        <input type="text" id="subject" name="subject" class="form-input" required
+                            placeholder="Sujet de votre message">
                     </div>
 
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" class="form-input" required placeholder="Décrivez votre projet en détail..."></textarea>
+                        <textarea id="message" name="message" class="form-input" required
+                            placeholder="Décrivez votre projet en détail..."></textarea>
                     </div>
 
                     <button type="submit" class="form-submit-btn">
@@ -618,7 +699,8 @@
             <div class="grid md:grid-cols-3 gap-8 mb-12">
                 <div>
                     <div class="flex items-center gap-2 mb-4">
-                        <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-lg flex items-center justify-center">
+                        <div
+                            class="w-8 h-8 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-lg flex items-center justify-center">
                             <i class="fas fa-code text-white text-sm"></i>
                         </div>
                         <span class="font-black text-lg text-slate-100">MonPortfolio</span>
@@ -641,18 +723,22 @@
                 <div>
                     <h4 class="font-bold text-slate-100 mb-4">Me Suivre</h4>
                     <div class="flex gap-4">
-                        <a href="https://www.linkedin.com/in/papa-dama-fofana-90a840348/" target="_blank" title="LinkedIn" class="social-icon">
+                        <a href="https://www.linkedin.com/in/papa-dama-fofana-90a840348/" target="_blank"
+                            title="LinkedIn" class="social-icon">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                         <a href="https://github.com/PapaFofana20" target="_blank" title="GitHub" class="social-icon">
                             <i class="fab fa-github"></i>
                         </a>
                         <a href="https://x.com/" target="_blank" title="X" class="social-icon">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.6l-5.165-6.75-5.91 6.75h-3.308l7.73-8.835L.424 2.25h6.7l4.67 6.168L17.67 2.25h.574zm-1.106 17.92h1.828L5.9 4.122H4.002l13.136 16.048z"/>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.6l-5.165-6.75-5.91 6.75h-3.308l7.73-8.835L.424 2.25h6.7l4.67 6.168L17.67 2.25h.574zm-1.106 17.92h1.828L5.9 4.122H4.002l13.136 16.048z" />
                             </svg>
                         </a>
-                        <a href="https://www.instagram.com/p.fofana20/" target="_blank" title="Instagram" class="social-icon">
+                        <a href="https://www.instagram.com/p.fofana20/" target="_blank" title="Instagram"
+                            class="social-icon">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -671,4 +757,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
