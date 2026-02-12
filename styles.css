@@ -547,7 +547,10 @@ textarea.form-input {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    background-clip: text;
     animation: slideInUp 0.8s ease;
+    line-height: 1.2;
+    word-break: break-word;
 }
 
 .section-title::after {
