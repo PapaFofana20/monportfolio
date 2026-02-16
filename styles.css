@@ -1,11 +1,9 @@
-/* Variables CSS personnalisées */
 :root {
     --primary: #0EA5E9;
     --secondary: #06B6D4;
     --accent: #8B5CF6;
 }
 
-/* Scrollbar personnalisée */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -23,7 +21,7 @@
     background: linear-gradient(180deg, var(--secondary) 0%, var(--accent) 100%);
 }
 
-/* Styles de base */
+
 html {
     scroll-behavior: smooth;
 }
@@ -33,7 +31,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Animation delays pour les blobs */
+
 .animation-delay-2000 {
     animation-delay: 2s;
 }
@@ -42,7 +40,7 @@ body {
     animation-delay: 4s;
 }
 
-/* Styles de section Hero avec image de fond */
+
 #home {
     background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1920&q=80');
     background-size: cover;
@@ -53,7 +51,7 @@ body {
     background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(30, 27, 75, 0.7) 50%, rgba(15, 23, 42, 0.75) 100%) !important;
 }
 
-/* Classes de cartes - Éducation */
+
 .education-card {
     position: relative;
     padding: 1.5rem 2rem;
@@ -88,7 +86,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Classes de cartes - Expérience */
+
 .experience-card {
     position: relative;
     padding: 1.5rem 2rem;
@@ -141,7 +139,7 @@ body {
     box-shadow: 0 8px 16px rgba(14, 165, 233, 0.2);
 }
 
-/* Classes de compétences */
+
 .skill-category-card {
     display: flex;
     flex-direction: column;
@@ -195,7 +193,7 @@ body {
     transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Classes de projets */
+
 .project-card {
     position: relative;
     border-radius: 0.75rem;
@@ -233,7 +231,7 @@ body {
     box-shadow: 0 8px 16px rgba(14, 165, 233, 0.2);
 }
 
-/* Classes de contact */
+
 .contact-info-card {
     display: flex;
     flex-direction: column;
@@ -274,7 +272,7 @@ body {
     overflow: hidden;
 }
 
-/* Effet de brillance sur le wrapper */
+
 .contact-form-wrapper::before {
     content: '';
     position: absolute;
@@ -408,7 +406,6 @@ body {
     border-color: rgba(16, 185, 129, 0.5);
 }
 
-/* Animation de validation */
 .form-input:valid:not(:placeholder-shown) {
     animation: validPulse 0.6s ease;
 }
@@ -489,7 +486,6 @@ textarea.form-input {
     transform: none;
 }
 
-/* Animation de succès */
 .form-submit-btn.success {
     background: linear-gradient(135deg, #10B981 0%, #14B8A6 100%);
     animation: successPulse 0.6s ease;
@@ -507,7 +503,6 @@ textarea.form-input {
     }
 }
 
-/* Icônes sociales */
 .social-icon {
     display: inline-flex;
     align-items: center;
@@ -530,7 +525,6 @@ textarea.form-input {
     box-shadow: 0 10px 25px rgba(14, 165, 233, 0.3);
 }
 
-/* Section Clients du footer */
 .clients-section {
     margin-top: 2rem;
 }
@@ -576,7 +570,6 @@ textarea.form-input {
     left: 100%;
 }
 
-/* Animation de couleur rainbow au hover */
 .client-item:hover {
     animation: rainbowGlow 0.5s ease;
 }
@@ -610,7 +603,6 @@ textarea.form-input {
     }
 }
 
-/* Animation de flottement pour les clients */
 .client-item {
     animation: clientFloat 3s ease-in-out infinite;
 }
@@ -640,12 +632,10 @@ textarea.form-input {
     }
 }
 
-/* Reset hover transform pour éviter les conflits */
 .client-item:hover {
     animation: none;
 }
 
-/* Titre de section avec pseudo-élément */
 .section-title {
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 900;
@@ -672,7 +662,6 @@ textarea.form-input {
     animation: slideInLeft 0.6s ease 0.2s both;
 }
 
-/* Animations @keyframes */
 @keyframes slideInRight {
     from {
         opacity: 0;
@@ -709,7 +698,6 @@ textarea.form-input {
     }
 }
 
-/* Media queries pour mobile - Responsivité */
 @media (max-width: 768px) {
     .section-title {
         font-size: clamp(1.5rem, 4vw, 2.5rem);

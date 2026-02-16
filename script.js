@@ -178,7 +178,7 @@ window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const homeSection = document.getElementById('home');
     
-    // Effet parallaxe pour la section home
+  
     if (homeSection) {
         homeSection.style.backgroundPosition = `center ${scrolled * 0.5}px`;
     }
